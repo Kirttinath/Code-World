@@ -6,7 +6,8 @@ function App() {
 
   return (
     <>
-      <h1>Hello weather : ☁️</h1>
+  
+    <h2>KOjha</h2>
     </>
   )
 }
