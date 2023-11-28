@@ -1,15 +1,6 @@
+import React, { useState } from "react";
+import styled from "styled-components";
+import Axios from "axios";
+import CityComponent from "./modules/CityComponent";
+import WeatherComponent from "./modules/WeatherInfoComponent";
 
-
-
-function App() {
-  
-
-  return (
-    <>
-  
-    <h2>KOjha</h2>
-    </>
-  )
-}
-
-export default App
