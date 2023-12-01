@@ -1,6 +1,6 @@
-import react,{ useEffect, useState } from 'react'
+import react,{ useEffect,useMemo, useState } from 'react'
 
-
+//useMemo Hook : 
 function App(){
 
   const [number, setNumber] = useState(0)
@@ -26,7 +26,7 @@ function slowFunction(num){
 }
 export default App
 /* ________________
-
+//UseState Hook: 
 function App1()
 {
 
@@ -56,6 +56,7 @@ function App1()
 
 
 /* 
+//useEffect Hook : 
 ___________
 function App2() {
   const [width, setWidth] = useState(window.innerWidth);
