@@ -1,28 +1,32 @@
 import react,{ useEffect, useState } from 'react'
 
 
+function App(){
 
- function App() {
-  const [width, setWidth] = useState(window.innerWidth);
-  
-  const handleResize = () => {
-    setWidth(window.innerWidth);
+  const [number, setNumber] = useState(0)
+  const [dark, setDark] = useState(false)
+  const doubleNumber= slowFunction(number)
+  const themeStyle ={
+    backgroundColor: dark ? 'black' : 'white',
+    color: dark ? 'white':'black'
   }
-  useEffect(() => {
-    window.addEventListener('resize', handleResize)
-    return () =>
-            window.removeEventListener('resize', handleResize)
-  }, [])
-  return (
+  return(
     <>
-    <div>{width}</div>
+    <input type='number' value={number} onChange={e => setNumber(
+      parseInt(e.target.value))}/><br/>
+    <button onClick={() => setDark(preDark => !preDark)}>Change</button><br/>
+    <div style={themeStyle}>{doubleNumber}</div>
     </>
   )
 }
 
+function slowFunction(num){
+  for(let i=0;i<=1000000000; i++){}
+  return num *2
+}
+export default App
+/* ________________
 
-
-/* 
 function App1()
 {
 
@@ -50,4 +54,24 @@ function App1()
   )
 } */
 
-export default App
+
+/* 
+___________
+function App2() {
+  const [width, setWidth] = useState(window.innerWidth);
+  
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+    return () =>
+            window.removeEventListener('resize', handleResize)
+  }, [])
+  return (
+    <>
+    <div>{width}</div>
+    </>
+  )
+} */
+
