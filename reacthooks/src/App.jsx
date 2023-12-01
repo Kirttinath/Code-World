@@ -10,7 +10,7 @@ import react,{ useEffect, useState } from 'react'
   }
   useEffect(() => {
     window.addEventListener('resize', handleResize)
-  })
+  }, [])
   return (
     <>
     <div>{width}</div>
