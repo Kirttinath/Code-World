@@ -2,29 +2,25 @@ import react,{ useEffect, useState } from 'react'
 
 
 
-/* function App() {
-  const [count, setCount] = useState(0);
-  const [theme, setTheme]  = useState("Blue");
-
-function decrease()
-{
-  setCount(prevcount => prevcount-1);//This is the right way to update setcount value by function
-}
-function increase()
-{
-  setCount(prevcount => prevcount+1);
-  setTheme("red");
-}
+ function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+  
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+  })
   return (
     <>
-    <button onClick={decrease}>-</button>
-    <span>{count}</span>
-    <span>{theme}</span>
-    <button onClick={increase}>+</button>
+    <div>{width}</div>
     </>
   )
-} */
+}
 
+
+
+/* 
 function App1()
 {
 
@@ -50,6 +46,6 @@ function App1()
     )}
     </>
   )
-}
+} */
 
-export default App1
+export default App
