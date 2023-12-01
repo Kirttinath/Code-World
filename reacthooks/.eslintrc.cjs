@@ -18,3 +18,4 @@ module.exports = {
     ],
   },
 }
+//ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs. In many ways, it is similar to JSLint and JSHint with a few exceptions:
