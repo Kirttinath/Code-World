@@ -7,11 +7,11 @@ function App() {
 
 function decrease()
 {
-  setCount(count-1);
+  setCount(prevcount => prevcount-1);//This is the right way to update setcount value by function
 }
 function increase()
 {
-  setCount(count+1);
+  setCount(prevcount => prevcount+1);
 }
   return (
     <>
