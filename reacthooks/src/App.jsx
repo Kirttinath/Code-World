@@ -1,4 +1,4 @@
-import react,{ useState } from 'react'
+import react,{ useEffect, useState } from 'react'
 
 
 
@@ -28,7 +28,14 @@ function increase()
 function App1()
 {
 
-  const [curr,newcurr]= useState("show");
+  const [curr,newcurr]= useState("show")
+  const [items, setitems] = useState([])
+
+  useEffect(() => {
+    fetch(`https://jsonplaceholder.typicode.com/${curr}`)
+    .then(response => response.json())
+    .then(json => setitems(json))
+  }, [curr])
 
   return(
     <>
@@ -38,6 +45,9 @@ function App1()
     <button onClick={() => newcurr("Shares")}>Share</button>
     </div>
     <h1>{curr}</h1>
+    {items.map(item => {
+      return <pre>{JSON.stringify(item)}</pre>}
+    )}
     </>
   )
 }
