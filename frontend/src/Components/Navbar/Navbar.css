@@ -16,3 +16,11 @@
     font-size: 38px;
     font-weight: 600;
 }
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+}
