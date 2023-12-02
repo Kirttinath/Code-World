@@ -63,3 +63,8 @@
     background: white;
     cursor: pointer;
 }
+
+.nav-login-cart button:active{
+    background: #938e8e;
+    color: white;
+}
