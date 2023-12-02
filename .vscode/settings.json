@@ -4,5 +4,6 @@
 
     },
     "editor.fontLigatures": false,
-    "editor.fontWeight": "450"
+    "editor.fontWeight": "550",
+    "files.autoSave": "off"
 }
