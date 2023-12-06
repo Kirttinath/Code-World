@@ -7,9 +7,9 @@ const LoginSignup = () => {
       <div className="loginsignup-container">
         <h1>Sign Up</h1>
         <div className="loginsignup-fields">
-          <input type="text" placeholder="Yuor Name"/>
+          <input type="text" placeholder="Your Name"/>
           <input type="email" placeholder='Email Address' />
-          <input type="password" placeholder='password' />
+          <input type="password" placeholder='Password' />
         </div>
         <button>Continue</button>
         <p className='loginsignup-login'>Already have an Account? <span>Login here</span></p>
