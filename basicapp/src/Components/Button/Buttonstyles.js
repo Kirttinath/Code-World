@@ -13,3 +13,8 @@ export const Button = styled.button`
   cursor: pointer;
   transition: 0.5s all ease-out;
 `;
+
+export const fancyButton = styled(Button)`
+background-image: linear-gradient(to right, #f6d365 0%, #fda085 100% );
+border: none;
+` 
