@@ -91,6 +91,28 @@ _____________________________________________
 📍Coding Practices
 📍Components Patterns
 
+14.📌Performance : (HLD) 
+--------------------------
+📍Shimmer UI
+📍Lazy Loading
+📍Asset Optimization(Write Optimized code)
+📍Bundlers
+📍CDM / Server Level
+
+15.📌Styling : 
+-----------------
+📍Tailwind
+📍Style-X -Facebook
+📍Bootstrap / Material UI
+📍ANT UI
+📍CSS / SCSS
+
+16.📌Accessebility :
+----------------------
+
+17.📌Security :
+----------------
+
 
 
 
