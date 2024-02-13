@@ -1,21 +1,14 @@
 import "./App.css";
-import { useState } from "react";
+import useCounter from "./useCounter";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const increaseCount = () => {
-    setCount(count + 1);
-  };
-  const decreaseCount = () => {
-    setCount(count - 1);
-  };
+  const [count, increaseCount, decreaseCount] = useCounter();
   return (
     <div className="App">
       <p>{count}</p>
       <br />
-      <br />
       <button onClick={increaseCount}>increaseCount</button>
-      <br />
+      <span> </span>
       <button onClick={decreaseCount}>decreaseCount</button>
     </div>
   );
