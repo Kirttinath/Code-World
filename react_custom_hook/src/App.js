@@ -1,15 +1,12 @@
 import "./App.css";
-import useCounter from "./useCounter";
+import Counter1 from "./Component/Counter1";
+import Counter2 from "./Component/Counter2";
 
 function App() {
-  const [count, increaseCount, decreaseCount] = useCounter();
   return (
     <div className="App">
-      <p>{count}</p>
-      <br />
-      <button onClick={increaseCount}>increaseCount</button>
-      <span> </span>
-      <button onClick={decreaseCount}>decreaseCount</button>
+      <Counter1 />
+      <Counter2 />
     </div>
   );
 }
