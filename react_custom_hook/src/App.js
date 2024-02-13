@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       {/* <Counter1 />
       <Counter2 /> */}
-      <h1>Hey, click on the button to open the modal.</h1>
+      <h1>Click to open the Modal :</h1>
       <button
         className="openModalBtn"
         onClick={() => {
